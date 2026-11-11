@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Panduan Budidaya Cabai</title>
+<style>
+:root{--bg:#000;--s1:#0f0f0f;--s2:#171717;--line:#2a2a2a;--tx:#ece8e1;--mut:#9b9790;--ac:#d0293b;--gold:#c9a96a;--r:10px;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:#000}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.serif,h1,h2,summary b{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+header{padding:44px 20px 22px;max-width:760px;margin:0 auto}
+h1{font-size:clamp(34px,9vw,56px);line-height:1.05;margin:0 0 12px;font-weight:600;letter-spacing:-.01em}
+h1 span{color:var(--ac)}
+header p{margin:0;color:var(--mut);max-width:46ch}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav div{display:flex;gap:6px;overflow-x:auto;padding:10px 16px;max-width:760px;margin:0 auto;scrollbar-width:none}
+nav div::-webkit-scrollbar{display:none}
+nav button{flex:none;background:none;border:1px solid transparent;color:var(--mut);padding:7px 14px;border-radius:99px;font:inherit;font-size:14px;cursor:pointer}
+nav button[aria-selected=true]{color:var(--tx);border-color:var(--gold)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+main{max-width:760px;margin:0 auto;padding:22px 16px 60px}
+h2{font-size:26px;margin:0 0 6px;font-weight:600}
+.lead{color:var(--mut);margin:0 0 18px;font-size:15px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.chips button{background:var(--s1);border:1px solid var(--line);color:var(--mut);padding:5px 12px;border-radius:99px;font:inherit;font-size:13px;cursor:pointer}
+.chips button[aria-pressed=true]{border-color:var(--ac);color:var(--tx)}
+details{background:var(--s1);border:1px solid var(--line);border-radius:var(--r);margin-bottom:10px}
+details[open]{border-color:#3a3a3a;background:var(--s2)}
+summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;gap:10px;align-items:center;justify-content:space-between}
+summary::-webkit-details-marker{display:none}
+summary b{font-size:18px;font-weight:600}
+summary::after{content:"+";color:var(--gold);font-size:20px;flex:none}
+details[open] summary::after{content:"–"}
+.tag{font-size:12px;color:var(--gold);border:1px solid #4a4130;border-radius:99px;padding:1px 9px;margin-left:auto;white-space:nowrap}
+.body{padding:0 16px 14px;border-top:1px solid var(--line)}
+.row{padding-top:11px}
+.row i{display:block;font-style:normal;font-size:13px;color:var(--ac);margin-bottom:1px;font-weight:600}
+.row span{font-size:15px;color:#d8d4cc}
+.sym{font:600 22px Georgia,serif;color:var(--gold);min-width:2.2ch}
+summary div{display:flex;align-items:center;gap:10px;min-width:0;flex:1}
+.note{margin-top:22px;border-left:2px solid var(--ac);padding:4px 14px;color:var(--mut);font-size:14px}
+.hst{background:var(--s1);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.hst .big{font:600 44px/1 Georgia,serif;color:var(--gold)}
+.hst .big small{font:14px system-ui,sans-serif;color:var(--mut);margin-left:6px}
+input[type=range]{width:100%;margin:18px 0 6px;accent-color:var(--ac)}
+.bar{height:3px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:16px}
+.bar div{height:100%;background:var(--ac);width:0}
+.hst h3{font:600 22px Georgia,serif;margin:0 0 8px}
+.hst ul{margin:0;padding-left:20px;color:#d8d4cc;font-size:15px}
+.hst li{margin-bottom:5px}
+.sel{width:100%;background:var(--s2);color:var(--tx);border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit;font-size:15px;margin-top:4px}
+.lbl{display:block;font-size:13px;color:var(--mut);margin-top:12px}
+.grp{font:600 19px Georgia,serif;color:var(--gold);margin:24px 0 4px}
+.rw{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.rw span{color:#bdb8af}
+.rw b{font-weight:600;text-align:right;flex:none;max-width:55%}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+@media(prefers-reduced-motion:no-preference){main>*{animation:f .25s ease}@keyframes f{from{opacity:0}to{opacity:1}}}
+</style>
+</head>
+<body>
+<header>
+<h1>Panduan Budidaya <span>Cabai</span></h1>
+<p>Dari pengolahan lahan sampai panen: jenis, perawatan, hama, obat-obatan, dan pupuk.</p>
+</header>
+<nav><div id="tabs" role="tablist"></div></nav>
+<main id="main"></main>
+<script>
+const R=(t,...a)=>[t,a[0],a.slice(1)];
+const T={
+jenis:{n:'Jenis',h:'Jenis cabai',d:'Pilih jenis sesuai ketinggian lahan, pasar, dan modal.',i:[
+R('Cabai besar','C. annuum','Kepedasan','±5.000–15.000 SHU','Umur panen','±75–90 HST (dari tanam)','Ciri','Buah besar, lurus, daging tebal. Contoh varietas: TM 999. Cocok dataran rendah–sedang; rentan busuk buah di musim hujan.'),
+R('Cabai keriting','C. annuum','Kepedasan','±10.000–30.000 SHU','Umur panen','±75–90 HST','Ciri','Buah ramping bergelombang, tahan simpan dan angkut. Contoh: Tanjung 2, Imola. Cocok dataran rendah hingga tinggi.'),
+R('Cabai rawit','C. frutescens','Kepedasan','±50.000–100.000 SHU','Umur panen','±90–120 HST','Ciri','Tahan panas dan kering, umur produktif panjang (bisa lebih dari 1 tahun). Contoh: Dewata F1. Perawatan relatif ringan.'),
+R('Cabai hijau / paprika','Paprika','Kepedasan','Paprika 0 SHU; cabai hijau ±sedang','Ciri','Paprika butuh suhu sejuk (dataran tinggi) atau greenhouse, nutrisi presisi (fertigasi). Cabai hijau dipanen muda dari varietas besar.'),
+R('Habanero','C. chinense','Kepedasan','±100.000–350.000 SHU','Umur panen','±100–120 HST','Ciri','Aroma buah khas, pertumbuhan lambat, suka tanah gembur kaya humus dan lembap tetapi drainase baik.')]},
+lahan:{n:'Lahan',h:'Pengelolaan lahan',d:'Lahan yang disiapkan baik menentukan separuh keberhasilan.',i:[
+R('Pemilihan lokasi','1','Syarat','Sinar matahari penuh (min. 8 jam), drainase baik, dekat sumber air, bukan bekas tanaman Solanaceae (tomat, terung, kentang, tembakau) 2–3 musim terakhir.','Tanah','Gembur, kaya bahan organik, pH 5,5–6,8.'),
+R('Pembersihan & pengolahan','2','Langkah','Bersihkan gulma dan sisa tanaman. Cangkul/bajak sedalam 30–40 cm, balik tanah, lalu jemur 1–2 minggu untuk membunuh patogen dan hama tanah.','Tambahan','Solarisasi dengan plastik bening 2–4 minggu membantu menekan layu dan nematoda.'),
+R('Pengapuran','3','Kapan','Jika pH di bawah 5,5, beri dolomit atau kapur pertanian ±1–2 ton/ha, 2 minggu sebelum tanam.','Fungsi','Menaikkan pH, menyuplai Ca dan Mg, mengurangi keracunan Al dan risiko layu.'),
+R('Pupuk dasar','4','Bahan','Pupuk kandang/kompos matang ±15–20 ton/ha, ditambah SP-36 dan NPK dasar sesuai rekomendasi setempat.','Catatan','Jangan pakai pupuk kandang mentah: panas dan membawa penyakit.'),
+R('Bedengan & mulsa','5','Ukuran','Lebar 100–120 cm, tinggi 30–40 cm (lebih tinggi saat hujan), parit 40–50 cm.','Mulsa','Plastik hitam-perak (sisi perak di atas): menekan gulma, menjaga lembap, memantulkan cahaya sehingga mengusir kutu dan thrips. Jarak tanam ±50–60 × 60–70 cm, 2 baris zig-zag.'),
+R('Drainase & irigasi','6','Hal penting','Parit pembuangan harus lancar. Irigasi tetes atau kocor hemat air dan menekan penyakit daun karena daun tidak basah.')]},
+tanam:{n:'Tanam',h:'Pembibitan dan penanaman',d:'Bibit sehat adalah modal awal.',i:[
+R('Benih & perlakuan','1','Pilih','Benih bersertifikat, daya tumbuh ≥85%.','Perlakuan','Rendam 30 menit–2 jam, bisa dengan larutan fungisida atau agens hayati (Trichoderma) untuk mencegah rebah semai.'),
+R('Penyemaian','2','Media','Tanah + kompos/pupuk kandang + sekam 1:1:1, steril. Semai di tray atau polibag kecil, 1 benih per lubang.','Perawatan','Naungan 50–70%, siram halus pagi-sore. Kecambah muncul 7–10 hari. Beri pupuk daun ringan di umur 10–14 hari.'),
+R('Seleksi bibit','3','Siap tanam','Umur 21–30 hari, 4–5 daun sejati, batang kokoh, bebas bercak dan hama. Keraskan (kurangi naungan) 3–5 hari sebelum pindah.'),
+R('Pindah tanam','4','Waktu','Sore hari atau saat mendung.','Cara','Siram lubang tanam dulu, tanam sedalam leher akar tanpa merusak bola akar, tekan tanah sekitar akar, lalu siram. Kocor starter (pupuk P tinggi atau Trichoderma) di 3–5 HST.')]},
+rawat:{n:'Rawat',h:'Perawatan tanaman',d:'Rutin dan konsisten lebih penting daripada sekali besar.',i:[
+R('Penyiraman','Rutin','Frekuensi','1 kali sehari di musim kemarau (pagi), sesuai kebutuhan saat hujan.','Waspada','Tanah lembap, bukan tergenang. Kekeringan saat berbunga merontokkan bunga; kelembapan berlebih memicu busuk akar.'),
+R('Penyulaman','7 HST','Cara','Ganti bibit mati atau tumbuh abnormal dengan bibit cadangan dari umur sama.'),
+R('Ajir / turus','10–14 HST','Cara','Pasang ajir bambu setinggi 1–1,2 m, ikat batang longgar dengan tali rafia, geser ikatan tiap 2 minggu. Mencegah rebah dan buah menyentuh tanah.'),
+R('Wiwil & pemangkasan','Berkala','Wiwil','Buang tunas air di bawah percabangan Y pertama agar energi terfokus ke cabang produktif.','Pangkas','Buang daun tua dan daun sakit di bagian bawah untuk sirkulasi udara.'),
+R('Penyiangan & pembumbunan','Berkala','Cara','Cabut gulma di lubang mulsa dan sekitar bedengan. Tinggikan tanah di pangkal batang untuk menguatkan akar dan membuang genangan.'),
+R('Pemupukan susulan','7–10 hari sekali','Cara','Kocor atau tugal sesuai fase tumbuh. Lihat tab Pupuk dan Jadwal.'),
+R('Rotasi & sanitasi','Antar musim','Cara','Rotasi dengan jagung, bawang, atau kacang-kacangan. Kumpulkan dan musnahkan buah dan tanaman sakit; jangan dikomposkan.')]},
+hama:{n:'Hama & Penyakit',h:'Hama dan penyakit',d:'Kenali gejala lebih awal. Prinsip PHT: pantau, cegah, lalu kendalikan.',chips:1,i:[
+R('Kutu daun (Aphis, Myzus)','Hama','Gejala','Daun mengeriting, ada embun madu dan semut. Juga menularkan virus.','Penanggulangan','Mulsa perak, perangkap kuning, semprot sabun/mimba, musuh alami (kumbang koksi); insektisida imidakloprid bila ledakan.'),
+R('Thrips','Hama','Gejala','Daun keperakan, mengeriting ke atas, pucuk dan bunga rusak; vektor virus.','Penanggulangan','Mulsa perak, perangkap biru/kuning, jaga kelembapan; spinetoram atau abamectin secara bergantian.'),
+R('Tungau (Polyphagotarsonemus)','Hama','Gejala','Daun mengecil, kaku, keriting ke bawah, tampak mengilap tembaga. Sering dikira virus.','Penanggulangan','Semprot abamectin atau spiromesifen; kurangi pupuk N berlebih.'),
+R('Kutu kebul (Bemisia)','Hama','Gejala','Serangga putih kecil di bawah daun, daun menguning dan berembun jelaga; vektor virus kuning.','Penanggulangan','Perangkap kuning, mulsa perak, buang daun terserang; imidakloprid atau spiromesifen bila perlu.'),
+R('Lalat buah (Bactrocera)','Hama','Gejala','Buah berbintik, membusuk, berbelatung, rontok.','Penanggulangan','Perangkap metil eugenol, kumpulkan dan kubur buah rontok, panen tepat waktu.'),
+R('Ulat grayak & ulat buah','Hama','Gejala','Daun berlubang, buah dilubangi dan dimakan dari dalam.','Penanggulangan','Pungut manual, perangkap feromon, Bacillus thuringiensis atau Beauveria; klorantraniliprol/emamektin bila berat.'),
+R('Ulat tanah (Agrotis)','Hama','Gejala','Batang bibit terpotong di pangkal pada malam hari.','Penanggulangan','Olah tanah dalam, cari dan matikan ulat pagi hari, umpan beracun, pembumbunan.'),
+R('Nematoda puru akar','Hama','Gejala','Akar bengkak berpuru, tanaman layu dan kerdil walau air cukup.','Penanggulangan','Solarisasi, rotasi dengan tagetes/jagung, Paecilomyces lilacinus, kompos kaya bahan organik.'),
+R('Antraknosa / patek','Penyakit','Gejala','Bercak cekung hitam-cokelat berlingkaran pada buah, jamur Colletotrichum; berat saat hujan.','Penanggulangan','Mulsa, ajir, jaga jarak tanam; fungisida azoksistrobin atau difenokonazol, mankozeb sebagai pencegah; panen buah masak segera.'),
+R('Layu fusarium','Penyakit','Gejala','Daun menguning dan layu satu sisi, berkas pembuluh batang cokelat, tanaman tidak membaik setelah disiram.','Penanggulangan','Rotasi, solarisasi, dolomit, Trichoderma; cabut tanaman sakit.'),
+R('Layu bakteri (Ralstonia)','Penyakit','Gejala','Layu mendadak tanpa menguning; batang dipotong dan direndam air jernih keluar lendir putih.','Penanggulangan','Drainase baik, tanah steril, rotasi, Pseudomonas fluorescens/Bacillus; tembaga sebagai pencegah. Cabut dan bakar tanaman sakit.'),
+R('Busuk Phytophthora','Penyakit','Gejala','Pangkal batang menghitam, busuk basah, layu mendadak pada tanah becek.','Penanggulangan','Bedengan tinggi, drainase; metalaksil + mankozeb, atau fungisida tembaga.'),
+R('Virus kuning / keriting','Penyakit','Gejala','Daun kuning belang, keriting, tanaman kerdil, buah sedikit dan kecil.','Penanggulangan','Tidak ada obatnya. Cabut dan musnahkan tanaman, kendalikan vektor (kutu kebul, thrips, kutu daun), bibit dalam sungkup kasa.'),
+R('Bercak daun (Cercospora)','Penyakit','Gejala','Bercak bulat abu-abu bermata kecokelatan, daun gugur.','Penanggulangan','Mankozeb, klorotalonil atau difenokonazol, sanitasi daun gugur.'),
+R('Rebah semai (damping off)','Penyakit','Gejala','Bibit membusuk di pangkal batang lalu roboh.','Penanggulangan','Media steril, drainase tray, jangan siram berlebih, Trichoderma pada media.'),
+R('Busuk ujung buah (fisiologis)','Penyakit','Gejala','Ujung buah cekung cokelat kehitaman, bukan karena jamur; kekurangan Ca dan air tidak stabil.','Penanggulangan','Kalsium nitrat, dolomit, penyiraman teratur, hindari N berlebih.')]},
+obat:{n:'Obat',h:'Pestisida dan fungsinya',d:'Gunakan sebagai opsi terakhir, rotasi bahan aktif berbeda agar tidak resisten.',chips:1,i:[
+R('Imidakloprid','Insektisida','Fungsi','Kutu daun, kutu kebul, thrips.','Cara kerja','Sistemik neonikotinoid: diserap akar/daun, mengganggu saraf serangga.','Catatan','Berbahaya bagi lebah, jangan semprot saat berbunga banyak.'),
+R('Abamectin','Insektisida','Fungsi','Tungau, thrips, pengorok daun.','Cara kerja','Translaminar: masuk ke jaringan daun, melumpuhkan saraf-otot hama.','Catatan','Hindari semprot dekat panen.'),
+R('Spinetoram / spinosad','Insektisida','Fungsi','Thrips, ulat grayak, ulat buah.','Cara kerja','Racun kontak dan lambung, menyerang saraf serangga.','Catatan','Relatif lebih ramah musuh alami.'),
+R('Klorantraniliprol / emamektin benzoat','Insektisida','Fungsi','Ulat grayak dan ulat buah.','Cara kerja','Mengunci kerja otot dan saraf ulat, makan berhenti dalam beberapa jam.','Catatan','Rotasi cara kerja tiap 2–3 aplikasi.'),
+R('Spiromesifen','Akarisida','Fungsi','Tungau dan kutu kebul (telur–nimfa).','Cara kerja','Menghambat sintesis lemak sehingga hama gagal berkembang.'),
+R('Mankozeb / propineb','Fungisida','Fungsi','Pencegahan antraknosa, bercak daun, embun.','Cara kerja','Kontak multi-situs (protektif): menghambat spora berkecambah. Semprot sebelum infeksi.','Catatan','Tidak menyembuhkan, perlu perekat saat hujan.'),
+R('Azoksistrobin','Fungisida','Fungsi','Antraknosa, bercak daun.','Cara kerja','Sistemik-translaminar (strobilurin): menghambat respirasi jamur.'),
+R('Difenokonazol','Fungisida','Fungsi','Antraknosa, bercak daun.','Cara kerja','Sistemik triazol: menghambat sintesis dinding sel jamur, bersifat protektif dan kuratif.'),
+R('Metalaksil + mankozeb','Fungisida','Fungsi','Phytophthora dan busuk pangkal.','Cara kerja','Sistemik menembus tanaman, ditambah kontak pelindung.'),
+R('Tembaga (hidroksida/oksiklorida)','Bakterisida','Fungsi','Pencegah layu/bercak bakteri dan jamur ringan.','Cara kerja','Ion Cu merusak enzim sel patogen di permukaan; pencegah, bukan kuratif.','Catatan','Dosis tinggi bisa membakar daun.'),
+R('Trichoderma','Hayati','Fungsi','Layu fusarium, rebah semai, busuk akar.','Cara kerja','Jamur baik yang menyaingi dan memparasit jamur patogen di akar dan tanah.'),
+R('Beauveria / Metarhizium','Hayati','Fungsi','Kutu, thrips, ulat, kutu kebul.','Cara kerja','Spora jamur menempel dan menginfeksi tubuh serangga. Aplikasi sore hari.'),
+R('Bacillus / Pseudomonas fluorescens','Hayati','Fungsi','Penyakit bakteri dan jamur tanah; Bt untuk ulat.','Cara kerja','Bakteri antagonis: menghasilkan antibiotik alami dan menginduksi ketahanan tanaman.'),
+R('Mimba, bawang putih, sabun','Nabati','Fungsi','Pengusir kutu, thrips, tungau ringan.','Cara kerja','Antifeedan dan pengganggu pertumbuhan hama. Aman, tetapi perlu diulang.'),
+R('Aturan aman penyemprotan','Penting','Label','Warna pita label: merah sangat toksik, kuning toksik, biru agak toksik, hijau relatif aman.','Praktik','Pakai masker, sarung tangan, baju lengan panjang; semprot pagi/sore, tidak berlawanan arah angin. Patuhi dosis label dan masa tunggu sebelum panen (PHI).')]},
+pupuk:{n:'Pupuk',h:'Pupuk dan unsur hara',d:'Simbol unsur, fungsi, gejala kekurangan, dan sumber pupuknya.',chips:1,i:[
+R('N Nitrogen','Unsur','Fungsi','Pertumbuhan daun, batang, dan tunas (fase vegetatif).','Kurang','Daun tua menguning rata, tanaman kerdil.','Kelebihan','Daun lebat gelap, bunga sedikit, rawan hama dan penyakit.','Sumber','Urea, ZA, Ca-nitrat, KNO₃.'),
+R('P Fosfor','Unsur','Fungsi','Perakaran, pembungaan, pembentukan buah, transfer energi.','Kurang','Daun keunguan, akar lemah, bunga sedikit.','Sumber','SP-36, TSP, MKP, NPK.'),
+R('K Kalium','Unsur','Fungsi','Ukuran, warna, kekerasan dan daya simpan buah; ketahanan penyakit dan kekeringan.','Kurang','Tepi daun tua kuning lalu cokelat, buah kecil dan pucat.','Sumber','KCl, KNO₃, MKP, ZK.'),
+R('Ca Kalsium','Unsur','Fungsi','Dinding sel kuat, mencegah busuk ujung buah dan rontok bunga.','Kurang','Pucuk keriting, ujung buah cekung hitam.','Sumber','Ca-nitrat, dolomit, kapur.'),
+R('Mg Magnesium','Unsur','Fungsi','Penyusun klorofil dan fotosintesis.','Kurang','Daun tua kuning di antara tulang daun, tulang tetap hijau.','Sumber','Dolomit, kieserit, MgSO₄.'),
+R('S Sulfur','Unsur','Fungsi','Protein, enzim, aroma dan rasa pedas khas cabai.','Kurang','Daun muda menguning pucat.','Sumber','ZA, ZK, gipsum.'),
+R('B Boron','Unsur mikro','Fungsi','Pembungaan, pembuahan, dan perkembangan tabung polen.','Kurang','Bunga rontok, pucuk mati, buah mengeras dan retak.','Sumber','Borax/asam borat, pupuk mikro.'),
+R('Zn Seng, Fe, Mn, Cu','Unsur mikro','Fungsi','Enzim, klorofil, hormon pertumbuhan.','Kurang','Daun muda kuning/pucat, ruas pendek; sering di tanah pH tinggi.','Sumber','Pupuk mikro chelat, kompos.'),
+R('Urea 46-0-0','Pupuk','Fungsi','Pasokan N cepat (46% N) untuk fase vegetatif.','Cara kerja','Dihidrolisis jadi amonium dan nitrat; mudah menguap, jangan ditaburkan di permukaan basah/panas.'),
+R('ZA 21-0-0 + 24 S','Pupuk','Fungsi','Pasokan N dan S, sedikit mengasamkan tanah.','Cara kerja','Amonium sulfat: N lebih lambat hilang daripada urea.'),
+R('SP-36 0-36-0','Pupuk','Fungsi','Pasokan P untuk akar dan bunga.','Cara kerja','Fosfat larut air; ditaruh dekat akar sebagai pupuk dasar karena P tidak mudah bergerak.'),
+R('KCl 0-0-60','Pupuk','Fungsi','Pasokan K tinggi fase buah.','Cara kerja','Kalium klorida; jangan berlebihan karena garam (klor) bisa membakar akar.'),
+R('NPK 16-16-16','Pupuk','Fungsi','Pupuk majemuk seimbang untuk fase awal dan pemeliharaan.','Cara kerja','Angka = persen N–P₂O₅–K₂O. Pilih NPK tinggi K (mis. 15-9-20) pada fase buah.'),
+R('KNO₃ 13-0-46','Pupuk','Fungsi','K tinggi dan N nitrat untuk berbunga dan berbuah.','Cara kerja','Larut penuh, cocok untuk kocor/fertigasi, tidak membuat tanah asam.'),
+R('MKP 0-52-34','Pupuk','Fungsi','P dan K tinggi untuk memacu bunga.','Cara kerja','Monokalium fosfat larut penuh; kocor atau semprot daun.'),
+R('Ca-nitrat 15,5-0-0 + 19 Ca','Pupuk','Fungsi','Pasokan Ca dan N nitrat, cegah busuk ujung buah.','Cara kerja','Ca ikut aliran air ke buah; dosis sering dan kecil.'),
+R('Pupuk kandang / kompos','Organik','Fungsi','Memperbaiki struktur tanah, daya simpan air, dan kehidupan mikroba.','Cara kerja','Melepas hara pelan, menjadi substrat mikroba baik. Wajib matang.'),
+R('Pupuk organik cair (POC)','Organik','Fungsi','Pelengkap hara mikro dan perangsang pertumbuhan.','Cara kerja','Semprot daun atau kocor, bukan pengganti pupuk dasar.')]},
+panen:{n:'Panen',h:'Panen dan pascapanen',d:'Panen pada waktu tepat menentukan harga dan mutu.',i:[
+R('Ciri siap panen','1','Cabai merah','Warna merah 80–100%, buah keras dan mengilap.','Rawit','Merah penuh atau sesuai permintaan pasar (hijau pun dibeli).'),
+R('Waktu & cara','2','Waktu','Pagi hari, setelah embun kering.','Cara','Petik dengan tangkai utuh (lebih awet), jangan merusak cabang. Pakai keranjang berlapis, hindari tumpukan tinggi.'),
+R('Interval & hasil','3','Interval','Tiap 3–7 hari, bisa 15–25 kali panen.','Hasil','Cabai merah ±10–20 ton/ha dengan perawatan baik; rawit bisa lebih lama berproduksi.'),
+R('Pascapanen','4','Sortir','Pisahkan buah cacat/sakit, kelompokkan menurut ukuran dan warna.','Simpan','Jangan dicuci bila disimpan; tempat teduh dan berventilasi. Suhu ±7–10 °C dan kelembapan tinggi memperpanjang mutu. Pengeringan: jemur atau oven setelah buah masak penuh.'),
+R('Setelah masa tanam','5','Lahan','Cabut dan musnahkan sisa tanaman sakit, olah tanah, lalu rotasi dengan tanaman non-Solanaceae 2–3 musim.')]},
+jadwal:{n:'Jadwal',h:'Kalender HST',d:'Geser untuk melihat pekerjaan pada hari setelah tanam (HST).',cal:1},
+kalkulator:{n:'Kalkulator',h:'Kalkulator lahan',d:'Geser luas lahan dari 0,5 sampai 20 hektar untuk memperkirakan kebutuhan bahan dan hasil.',calc:1}
+};
+const PH=[
+[-14,-1,'Persiapan lahan',['Olah tanah 30–40 cm dan jemur','Dolomit bila pH rendah','Pupuk kandang + pupuk dasar','Bedengan dan mulsa, semai benih']],
+[0,6,'Pindah tanam',['Tanam bibit 21–30 hari sore hari','Siram rutin, jaga lembap','Kocor starter di 3–5 HST']],
+[7,13,'Penyulaman & ajir',['Sulam bibit mati (7 HST)','Pasang ajir bambu','Mulai pantau kutu, thrips, ulat tanah']],
+[14,29,'Vegetatif awal',['Pupuk N seimbang (NPK 16-16-16) tiap 7–10 hari','Wiwil tunas air, bumbun, siangi gulma','Pantau kutu, thrips, tungau; perangkap kuning']],
+[30,44,'Awal berbunga',['Naikkan P dan K (MKP/NPK tinggi K)','Tambah Ca dan B agar bunga tidak rontok','Pasang perangkap metil eugenol (lalat buah)']],
+[45,69,'Pembentukan buah',['Fokus K (KNO₃/KCl), jaga Ca','Siram teratur, cegah genangan','Fungisida pencegah antraknosa; sanitasi buah busuk']],
+[70,200,'Panen dan pemeliharaan',['Panen tiap 3–7 hari, pagi hari','Pupuk susulan K dan N seimbang tiap 7–10 hari','Patuhi masa tunggu pestisida (PHI)','Buang buah dan tanaman sakit']]];
+const tabs=document.getElementById('tabs'),main=document.getElementById('main');
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+function item(it,sym){
+ const d=el('details'),s=el('summary'),w=el('div');
+ if(sym){const p=it[0].split(' ');w.append(el('span','sym',p[0]));w.append(el('b','',p.slice(1).join(' ')||it[0]))}else w.append(el('b','',it[0]));
+ s.append(w);
+ if(it[1]&&it[1].length>2)s.append(el('span','tag',it[1]));
+ d.append(s);
+ const b=el('div','body');
+ for(let i=0;i<it[2].length;i+=2){const r=el('div','row');r.append(el('i','',it[2][i]));r.append(el('span','',it[2][i+1]));b.append(r)}
+ d.append(b);return d}
+function cal(box){
+ const h=el('div','hst'),big=el('div','big');
+ const sl=document.createElement('input');sl.type='range';sl.min=-14;sl.max=120;sl.value=0;sl.setAttribute('aria-label','Hari setelah tanam');
+ const bar=el('div','bar'),fill=el('div');bar.append(fill);
+ const t=el('h3'),ul=el('ul');
+ const up=()=>{const v=+sl.value,p=PH.find(x=>v>=x[0]&&v<=x[1])||PH[PH.length-1];
+  big.textContent='';big.append(document.createTextNode(v<0?v:v));big.append(el('small','','HST'));
+  fill.style.width=((v+14)/134*100)+'%';t.textContent=p[2];ul.textContent='';p[3].forEach(x=>ul.append(el('li','',x)))};
+ sl.oninput=up;h.append(big,sl,bar,t,ul);box.append(h);up()}
+function calc(box){
+ const h=el('div','hst'),big=el('div','big'),sub=el('div','lead'),sl=document.createElement('input'),cb=el('div','chips'),out=el('div'),sel=document.createElement('select'),lb=el('label','lbl','Kepadatan tanam');
+ sub.style.margin='6px 0 0';
+ sl.type='range';sl.min=.5;sl.max=20;sl.step=.5;sl.value=1;sl.setAttribute('aria-label','Luas lahan (hektar)');
+ sel.className='sel';sel.id='dens';lb.htmlFor='dens';
+ [['Standar: ±17.000 tanaman/ha',17000],['Rapat: ±20.000 tanaman/ha',20000],['Jarang (rawit, habanero): ±14.000 tanaman/ha',14000]].forEach(o=>{const p=document.createElement('option');p.value=o[1];p.textContent=o[0];sel.append(p)});
+ const f=(n,d=0)=>n.toLocaleString('id-ID',{maximumFractionDigits:d});
+ const rg=(a,b,L,u,d=1)=>f(a*L,d)+'–'+f(b*L,d)+' '+u;
+ const pre=[.5,1,2,5,10,20].map(v=>{const b=el('button','',f(v,1)+' ha');b.type='button';b.onclick=()=>{sl.value=v;up()};cb.append(b);return[v,b]});
+ const up=()=>{const L=+sl.value,n=+sel.value*L,bib=Math.ceil(n*1.15),ben=Math.ceil(bib/.85/160/10)*10,mul=6250*L;
+  big.textContent='';big.append(document.createTextNode(f(L,1)),el('small','','hektar'));
+  sub.textContent='= '+f(L*10000)+' m²';
+  pre.forEach(p=>p[1].setAttribute('aria-pressed',p[0]===L));
+  const G=[['Tanaman dan bibit',[['Populasi tanaman',f(n)],['Bibit (termasuk cadangan 15%)',f(bib)],['Benih (daya tumbuh 85%)',ben>=1000?f(ben/1000,2)+' kg':f(ben)+' g'],['Ajir bambu (1 per tanaman)',f(n)]]],
+  ['Lahan dan pupuk dasar',[['Pupuk kandang matang',rg(15,20,L,'ton')],['Dolomit (bila pH < 5,5)',rg(1,2,L,'ton')],['SP-36',rg(200,300,L,'kg',0)],['Mulsa plastik lebar 120 cm',f(mul)+' m (≈ '+Math.ceil(mul/700)+' rol @700 m)']]],
+  ['Pupuk susulan (seluruh musim)',[['NPK 16-16-16',rg(800,1200,L,'kg',0)],['KNO₃ (fase buah)',rg(200,400,L,'kg',0)],['Kalsium nitrat',rg(100,200,L,'kg',0)],['Larutan kocor per aplikasi (±250 ml/tanaman)',f(n*.25)+' L']]],
+  ['Perlindungan tanaman',[['Larutan semprot per aplikasi',rg(400,600,L,'L',0)+' (≈ '+Math.ceil(400*L/16)+'–'+Math.ceil(600*L/16)+' tangki 16 L)'],['Perangkap metil eugenol',rg(40,50,L,'buah',0)]]],
+  ['Perkiraan hasil',[['Cabai merah (panen total)',rg(10,20,L,'ton')]]]];
+  out.textContent='';
+  G.forEach(g=>{out.append(el('div','grp',g[0]));g[1].forEach(r=>{const w=el('div','rw');w.append(el('span','',r[0]),el('b','',r[1]));out.append(w)})});
+  out.append(el('p','note',L<=1?'Skala kecil: pengolahan dan penyiraman manual masih efisien.':L<=5?'Skala menengah: pertimbangkan irigasi tetes, mulsa mesin, dan tim panen tetap.':'Skala besar: gunakan traktor, fertigasi, jadwal tanam bertahap agar panen tidak serentak, dan petugas pemantau hama khusus.'));
+  out.append(el('p','lead','Asumsi: bedengan 100–120 cm dengan parit sehingga ±6.250 m bedengan per hektar, 1 gram benih ±160 butir. Semua angka adalah perkiraan; sesuaikan dengan uji tanah dan rekomendasi setempat.'))};
+ sl.oninput=up;sel.onchange=up;
+ h.append(big,sub,sl,cb,lb,sel);box.append(h,out);up()}
+function show(k){
+ if(!T[k])k='jenis';const c=T[k];
+ [...tabs.children].forEach(b=>b.setAttribute('aria-selected',b.dataset.k===k));
+ main.textContent='';main.append(el('h2','',c.h),el('p','lead',c.d));
+ if(c.cal){cal(main)}else if(c.calc){calc(main)}else{
+  const list=el('div');
+  const draw=f=>{list.textContent='';c.i.filter(x=>!f||x[1]===f).forEach(x=>list.append(item(x,k==='pupuk'&&/^(N|P|K|Ca|Mg|S|B|Zn) /.test(x[0]))))};
+  if(c.chips){const tg=[...new Set(c.i.map(x=>x[1]))],cb=el('div','chips');let cur='';
+   ['Semua',...tg].forEach((n,i)=>{const b=el('button','',n);b.type='button';b.setAttribute('aria-pressed',i===0);
+    b.onclick=()=>{cur=i?n:'';[...cb.children].forEach(x=>x.setAttribute('aria-pressed',x===b));draw(cur)};cb.append(b)});
+   main.append(cb)}
+  draw('');main.append(list)}
+ main.append(el('p','note','Dosis dan masa tunggu mengikuti label produk dan anjuran penyuluh pertanian setempat. Angka di panduan ini adalah kisaran umum.'));
+ window.scrollTo(0,0)}
+Object.keys(T).forEach(k=>{const b=el('button','',T[k].n);b.type='button';b.dataset.k=k;b.setAttribute('role','tab');
+ b.onclick=()=>{location.hash=k};tabs.append(b)});
+const go=()=>show(location.hash.slice(1));
+addEventListener('hashchange',go);go();
+</script>
+</body>
+</html>
